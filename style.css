@@ -1,0 +1,112 @@
+*{
+   color: #FFF;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.memorama{
+    height: 80%;
+    width: 60%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.memorama-playground{
+    width: 80%;
+    height: 100%;
+}
+
+.memorama-info{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 35px;
+}
+
+.card-row{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    min-height: 96%;
+    min-width: 24%;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: #000;
+    font-size: 40px;
+    font-weight: 900;
+    transition-duration: 0.5s;
+    user-select: none;
+}
+
+.card:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+    background-color: rgba(255,255,255,0.8);
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options button{
+    font-size: 25px;
+    border-style: none;
+    border-radius: 10px;
+    width: 130px;
+    height: 50px;
+    color: #000;
+    font-weight: 900;
+}
+
+.options button:hover{
+    transition-duration: 0.5s;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.point-container, .timer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+@media (max-width: 900px){
+    .memorama{
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
+    }
+
+    .memorama-info{
+        flex-direction: row;
+        height: 20%;
+    }
+
+    .memorama-playground{
+        width: 100%;
+    }
+}
